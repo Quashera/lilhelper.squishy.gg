@@ -14,7 +14,8 @@ This section contains the music commands
 `!bumpplay` Same as play, but forces the song to the start of the queue.  
 `!search` search for a track if you don't know exactly the name.  
 `!genre` Pick a spotify genre to add to the playlist  
->!play let the bodies hit the floor
+
+> !play let the bodies hit the floor
 
 ### Skipping, pausing, etc  
 `!now` Now playing. also gives buttons for play pause and skip  
