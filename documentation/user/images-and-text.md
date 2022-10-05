@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Text and Image generation
+title: Social, Text and Image
 parent: User Commands
 nav_order: 3
 ---
@@ -16,10 +16,8 @@ nav_order: 3
 
 ---
 ## Social/Roleplay  
+`![command] [user]`  
 Collection of gif interactions.  
-`!pat [user]`  
->!dropkick @cutie#2454
-{: .usage }
 
 | Command | What |
 | ------ | ----------- |
@@ -41,6 +39,8 @@ Collection of gif interactions.
 | **bonk**| Bonk someone!  
 | **nom**| bite them  
 
+>!dropkick @cutie#2454
+{: .usage }
 
 **!compliment**  
 Compliment people in a creative way  
