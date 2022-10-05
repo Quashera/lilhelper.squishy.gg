@@ -5,13 +5,26 @@ parent: Moderator Commands
 nav_order: 1
 ---
 
-## Moderation
+# Moderation
+{: .no_toc }
+
+## Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Moderation Log
 
 **!modlogset modlog**  
-`!modlogset modlog [channel]`
-Set a channel as the modlog.
-Omit <channel> to disable the modlog.
+`!modlogset modlog [channel]`  
+Set a channel as the modlog.  
+Omit <channel> to disable the modlog.  
 
+
+## Messages
 **!purge**  
 Deletes a provided amount of messages from the channel
 `!purge [number of messages]`
@@ -20,6 +33,8 @@ Deletes a provided amount of messages from the channel
 **!slowmode**  
 Changes channel's slowmode setting.
 `Syntax: !slowmode [interval=0:00:00]`
+
+## Kicking And Banning
 
 **!ban**  
 Bans a user  
@@ -62,22 +77,7 @@ Unban a user from this server.
 2. enable developer mode, go to Bans in this server's settings, right-
 click the user and select 'Copy ID'.*
 
-**!userinfo**  
-Show information about a user.  
-
-**!names**  
-Show previous names and nicknames of a user.  
-
-**!rename**  
-Change a user's nickname.  
-`Syntax: !rename <user> [nickname]`
-
-**!mute**  
-Mute users.  
-
-**!unmute**  
-Unmute users.  
-
+## Voice moderation
 **!voiceban**  
 Ban a user from speaking and listening in the server's voicechats   
 `Syntax: !voiceban <user> [reason]`
@@ -89,11 +89,18 @@ Kick a member from a voice channel.
 **!voiceunban** Unban a user from speaking and listening in the server.  
 `Syntax: !voiceunban <user> [reason]`
 
-**!modset**  
-Manage server administration settings.  
+## User information and names
+**!userinfo**  
+Show information about a user.  
 
+**!names**  
+Show previous names and nicknames of a user.  
 
+**!rename**  
+Change a user's nickname.  
+`Syntax: !rename <user> [nickname]`
 
+## Warnings
 Warnings:
 actionlist List all configured automated actions for Warnings.  
 mywarnings List warnings for yourself.  
@@ -106,7 +113,10 @@ warningset Manage settings for Warnings.
 warnreason Manage warning reasons.  
 
 
-###### Moderation Configuration {#config}
+## Moderation Configuration
+
+**!modset**  
+Manage server administration settings.  
 
 **!modset banmentionspam**  
 Set the autoban conditions for mention spam.
@@ -120,3 +130,45 @@ Toggle whether a message should be sent to a user when they ...
 Toggle role hierarchy check for mods and admins.
 **!modset reinvite**  
 Toggle whether an invite will be sent to a user when u...
+
+## Birthday management
+For birthday user commands, see user commands  
+/documentation/user/other.html#birthdays
+
+**List all registered birthdays**  
+`!birthday list`  
+Lists the birthdays of users in the server.  
+
+**Change the role assigned to users on their birthday**  
+`!birthday role <role>`  
+Sets the role to assign to a birthday user.  
+Make sure this role can be assigned and removed by the bot by placing it in the correct hierarchy location.  
+> !birthday role @BDAY CHILD 
+{: .usage }
+
+**Removing the birthday role**  
+`!birthday unassign <member>`  
+Removes the birthday role from a tagged user
+>!birthday unassign @squishy#1234
+{: .usage }
+
+**Message Channel**  
+`!birthday channel [channel]`  
+Set(toggle) the channel to mention members on their birthday.  
+Defaults to current channel if you don't mention a channel  
+> !birthday channel #general
+{: .usage }
+
+To test the channel mention, you can run `!birthday test`  
+
+**Adding other users**  
+`!birthday aadd <member> [day] [month]`  
+Add any user's birthday to the list. If date is not specified, it will default to the current day. 
+> !birthday aadd @squishy#1234 24 3  
+{: .usage }
+
+**Removing other users**  
+`!birthday adelete <member>`
+Delete any user's birthday role and birthday from the list.
+> !birthday adelete @squishy#1234
+{: .usage }

@@ -5,25 +5,71 @@ parent: User Commands
 nav_order: 3
 ---
 
-### Text tools
+# Text and Image Generation
+{: .no_toc }
+
+## Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+## Social/Roleplay  
+Collection of gif interactions.  
+`!pat [user]`  
+>!dropkick @cutie#2454
+{: .usage }
+
+| Command | What |
+| ------ | ----------- |
+| **!cry** | Cry D:  
+| **dropkick** | Dropkick someone!  
+| **feed** | Feeds the tagged user  
+| **highfive** | Give a high five!  
+| **hug** | Give them a hug
+| **kiss** | Kiss someone!  
+| **nyan**| Go nyaaaa~  
+| **pat**| Give pat to user  
+| **poke**| Pokes them  
+| **slap**| Slaps someone!  
+| **smug**| Be smug!  
+| **tickle**| Tickles someone! 
+| **tuck**| Tuck in someone  
+| **yeet**| Yeets the tagged user  
+| **stinky**| Be a stinky or call someone out for being one.  
+| **bonk**| Bonk someone!  
+| **nom**| bite them  
+
+
+**!compliment**  
+Compliment people in a creative way  
+`!compliment [user]`  
+>!compliment @cutie
+{: .usage }
+
+## Text tools
 
 **!aesthetics**  
 Returns inputed text in aesthetics  
 `!aesthetics [text]`
->!aesthetics aesthetics
+>!aesthetics fancyyyyyyy
+{: .usage }
 
 **!ascii**  
 Convert text into ASCII
 `!ascii [text]`
 >!ascii hey there
+{: .usage }
 
 **!emojify**  
 Replace characters in text with emojis.  
 `!emojify [text]`
->!emojify yo
+>!emojify i am really cool
+{: .usage }
 
-### Image tools
-
+## Image tools
+Does actions to the last posted image by default, but you can also add a picture url to the command!  
 `!flipimg` Rotate an image 180 degrees  
 `!flop` Mirror an image  
 `!haah` Mirror an image vertically left to right  
@@ -38,13 +84,19 @@ Replace characters in text with emojis.
 `!gmagik` Attempt to do magik on a gif  
 `!vw` Add a touch of vaporwave to an image  
 `!watermark` Add a well known watermark to an image  
-`!rotate` Rotate image X degrees  
+`!rotate [degrees] [urls]` Rotate image X degrees  
 >!rotate 15
+{: .usage }
 
 **!caption**  
 Post after an image to add captions to it. remember to put your text in "qotes if more than one word"
 `!caption ["text"] [colour]`
 >!caption "cutie pie cup cakes" pink
+
+**!mock**  
+Mock the last user to post. you can also add your own text and mock yourself.  
+`!mock [text]` If no text is provided it will mock the previous message  
+>!mock
 
 **!triggered**  
 Generate a Triggered Gif for a User or Image.  
@@ -58,7 +110,7 @@ Generate a image that fades between too pictures
 `!facemerge [image link 1] [image link 2]`
 >!facemerge https://cdn.discordapp.com/attachments/483349448966012928/697402580476624926/quaslol_01.png https://cdn.discordapp.com/attachments/483349448966012928/697402582469181500/quaslol_03.png
 
-###Images of text
+### Images of text
 
 **!tti**  
 Generate an image of text  
@@ -106,7 +158,7 @@ Generate a feels image using users avatar and role colour
 `!feels [user]`
 >!feels @cutie
 
-###Videos
+## Videos
 
 **!obama**  
 Synthesize video clips of Obama  

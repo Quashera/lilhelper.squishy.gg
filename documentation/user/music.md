@@ -4,9 +4,18 @@ parent: User Commands
 nav_order: 1
 ---
 
-## Music
+# Music
+{: .no_toc }
 
-This section contains the music commands
+## Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Playback
 
 ### Starting the music or adding to the list
 `!play` Play a URL or search for a track.  
@@ -15,6 +24,7 @@ This section contains the music commands
 `!genre` Pick a spotify genre to add to the playlist  
 
 > !play let the bodies hit the floor
+{: .usage }
 
 ### Skipping, pausing, etc  
 `!now` Now playing. also gives buttons for play pause and skip  
@@ -25,7 +35,8 @@ This section contains the music commands
 `!repeat` Toggle repeat.  
 `!shuffle` Toggle shuffle.  
 `!stop` Stop playback and clear the queue.  
->!skip 22
+> !skip 22
+{: .usage }
 
 ### Queue management  
 `!queue` List the songs in the queue.  
@@ -33,6 +44,7 @@ This section contains the music commands
 `!bump` Bump a track number to the top of the queue.  
 `!remove` Remove a specific track number from the queue.
 >!bump 36
+{: .usage }
 
 ### Techical stuff  
 `!disconnect` Disconnect the bot from the voice channel.  
@@ -40,6 +52,7 @@ This section contains the music commands
 `!summon` Summon the bot to your voice channel.  
 `!volume` Set the volume, 1% - 150%.  
 >!volume 45
+{: .usage }
 
 ## Playlists
 #### Finding and starting a playlist
@@ -47,6 +60,7 @@ This section contains the music commands
 `!playlist info` Retrieve information from a saved playlist.  
 `!playlist start` Load a playlist into the queue.  
 >!playlist start cosy
+{: .usage }
 
 ### Creating and editing playlists
 `!playlist create` Create an empty playlist.  
@@ -56,7 +70,10 @@ This section contains the music commands
 `!playlist dedupe` Remove duplicate tracks from a saved playlist.  
 `!playlist remove` Remove a track from a playlist by url.  
 `!playlist delete` Delete a saved playlist.
->!playlist save musikk https://www.youtube.com/watch?v=JAyROGRwhiU&list=PLRJsvym5gftANWYmoKGlwNzbOhLYVJqlc
+
+{: .usage }
+> !playlist save "cool music" https://www.youtube.com/watch?v=JAyROGRwhiU&list=PLRJsvym5gftANWYmoKGlwNzbOhLYVJqlc
+
 
 ### Technical stuff
 `!playlist rename` Rename an existing playlist.  
