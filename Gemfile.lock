@@ -283,7 +283,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
   jekyll-remote-theme
-  just-the-docs (= 0.3.3)
+  just-the-docs
   minima (~> 2.5)
   nokogiri
   rack (~> 2.2.4)
