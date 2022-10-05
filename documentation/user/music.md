@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Music
 parent: User Commands
 nav_order: 1
