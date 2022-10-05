@@ -21,61 +21,73 @@ nav_order: 1
 **!modlogset modlog**  
 `!modlogset modlog [channel]`  
 Set a channel as the modlog.  
-Omit <channel> to disable the modlog.  
+Send without a mentioned channel to disable the modlog.  
 
 
 ## Messages
 **!purge**  
-Deletes a provided amount of messages from the channel
-`!purge [number of messages]`
+`!purge [number of messages]`  
+Deletes a provided amount of messages from the channel  
 >!purge 78
+{: .usage }
 
 **!slowmode**  
-Changes channel's slowmode setting.
-`Syntax: !slowmode [interval=0:00:00]`
+`!slowmode [interval=0:00:00]`  
+Changes channel's slowmode setting.  
+
 
 ## Kicking And Banning
 
-**!ban**  
+**Normal Ban**  
+`!ban [user] [days] [reason]`  
 Bans a user  
 You have to tag a user, and optionally you can add how many days of messages you want to delete, and a reason to appear in the logs.  
-`!ban [user] [days] [reason]`  
 [user] a tagged person  
-[days] is nuber of days of messages to delete  
+[days] is nuber of days of messages to delete *Minimum 0 days, maximum 7.*   
 [reason] is for the logs.  
-If [days] is not a number, it's treated as the first word of the reason.  
-Minimum 0 days, maximum 7.  
+*If [days] is not specified, it's treated as the first word of the reason. *  
+
 >!ban @cutie 5 posting spam time and time again
+{: .usage }
+  
 
-**!hackban**  
-Bans user(s) that are not currently in the server, optionally you can add how many days of messages you want to delete, and a reason to appear in the logs.  
+**Hack Ban**  
 `!hackban [userID] [days] [reason]`  
+Bans user(s) that are not currently in the server, optionally you can add how many days of messages you want to delete, and a reason to appear in the logs.  
 [userID] a user ID  
-[days] is nuber of days of messages to delete, if they have been in your discord before  
+[days] is nuber of days of messages to delete, if they have been in your discord before *Minimum 0 days, maximum 7.*  
 [reason] is for the logs.  
-If [days] is not a number, it's treated as the first word of the reason.  
-Minimum 0 days, maximum 7.  
->!hackban 123456789 spamming in that other discord i'm in
+*If [days] is not specified, it's treated as the first word of the reason.*  
+>*Requires specifying the target user's ID, To find this, you may either:*  
+>*1. Copy it from the mod log case (if one was created)*  
+>*2. enable developer mode, right'click the user and select 'Copy ID'.*  
 
-**!kick**  
-Kick a user.   
+>!hackban 105845684625548632 3 spamming in that other discord i'm in
+{: .usage }
+
+**Kick**  
 `!kick [user] [reason]`  
+Kick a user.   
 
-**!softban**  
+**Soft Ban**  
+`!softban <user> [reason]`  
 Kick a user and delete 1 day's worth of their messages.  
-`Syntax: !softban <user> [reason]`  
 
-**!tempban**  
+
+**Temporary Ban**  
+`!tempban <user> [days=1] [reason]`  
 Temporarily ban a user from this server.  
-`Syntax: !tempban <user> [days=1] [reason]`  
 
-**!unban**  
+
+**Unban**  
+`!unban <user_id> [reason]`  
 Unban a user from this server.  
-`Syntax: !unban <user_id> [reason]`  
-*Requires specifying the target user's ID, To find this, you may either:
-1. Copy it from the mod log case (if one was created), or
-2. enable developer mode, go to Bans in this server's settings, right-
-click the user and select 'Copy ID'.*
+>*Requires specifying the target user's ID, To find this, you may either:*  
+>*1. Copy it from the mod log case (if one was created)*  
+>*2. enable developer mode, go to Bans in this server's settings, right-click the user and select 'Copy ID'.* 
+
+>!unban 105845684625548632 they promised they'd buy me chocolate
+{: .usage }
 
 ## Voice moderation
 **!voiceban**  

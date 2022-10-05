@@ -19,33 +19,37 @@ Make sure you configure the other settings for a role in !roleset
 **[message id]** Id of the message you want the bot to react to. to find this enable developer mode in discord appearance settings, and right click the message, there should be a "copy ID" button  
 **[reaction]** what emoji do you want for this role? - must be available to the bot, so in the discord or global  
 >!rolebind "cutie pie" info 661162397977018368 :regional_indicator_c:
-
+{: .usage }
 
 **!roleset selfadd**  
 Allows people to give themselves this role.  
 `!roleset selfadd [role] [1 or 0 for yes or no]`  
 >!roleset selfadd cutie 1
+{: .usage }
 
 **!roleset selfrem**  
 Allows people to remove themselves from this role.  
 `!roleset selfrem [role] [1 or 0 for yes or no]`  
 >!roleset selfrem cutie 1
-
+{: .usage }
 
 **!hackrole**  
 Puts a sticky role on someone not in the server yet. Has to be a sticky role!  
 `!hackrole [user ID] [role]`  
 >!hackrole 158257963931402240 awoo
+{: .usage }
 
 **!roleunbind**  
 Unbinds a role from a reaction on a message  
 `!roleunbind [role] [message ID] [emoji]`  
 >!roleunbind awoo 697448957391011891 :blush:
+{: .usage }
 
 **!clearmessagebinds**  
 Clears all role react bindings on the specefied message  
 `!clearmessagebinds [channel] [message_id]`  
 >!clearmessagebinds general 697440993527595008
+{: .usage }
 
 #### Role requirements
 **!roleset cost**  
@@ -93,6 +97,7 @@ You've come to the right place!
 Sets what role to give people when they're live  
 `!streamrole setrole [role]`  
 >!streamrole setrole Live
+{: .usage }
 
 **!streamrole setmode**  
 Change if you want the roles to be on a whitelist or blacklist.  
@@ -101,6 +106,7 @@ Blacklist means everyone gets the role when live unless listed.
 Both lists can contain roles or users directly.  
 `!streamrole setmode [blacklist or whitelist]`
 >!streamrole setmode blacklist
+{: .usage }
 
 #### Managing the blacklist and whitelist  
 
@@ -108,31 +114,37 @@ Both lists can contain roles or users directly.
 Show the blacklisted members and roles in this server.  
 `!streamrole blacklist show`  
 >!streamrole blacklist show
+{: .usage }
 
 **!streamrole blacklist add**  
 Add a user or role to the Blacklist  
 `!streamrole blacklist add [user or role]`  
 >!streamrole blacklist add newbies
+{: .usage }
 
 **!streamrole blacklist remove**  
 Remove a user or role from the Blacklist.  
 `!streamrole blacklist remove [user or role]`  
 >!streamrole blacklist remove newbies
+{: .usage }
 
 **!streamrole whitelist show**  
 Show the whitelisted members and roles in this server.
 `!streamrole whitelist show`  
 >!streamrole whitelist show
+{: .usage }
 
 **!streamrole whitelist add**  
 Add a user or role to the whitelist  
 `!streamrole whitelist add [user or role]`  
 >!streamrole whitelist add newbies
+{: .usage }
 
 **!streamrole whitelist remove**  
 Remove a user or role from the whitelist.  
 `!streamrole whitelist remove [user or role]`  
 >!streamrole whitelist remove newbies
+{: .usage }
 
 #### Managing stream role alerts
 
@@ -140,17 +152,20 @@ Remove a user or role from the whitelist.
 Sets if the bot should annouce that someone is live and has gotten the role.  
 `!streamrole alerts setenabled [true or false]`  
 >!streamrole alerts setenabled true
+{: .usage }
 
 **!streamrole alerts setchannel**  
 Sets what channel to post live alerts for the people who recieve the stream roles.  
 `!streamrole alerts setchannel [channel]`  
 >!streamrole alerts setchannel spam1
+{: .usage }
 
 **!streamrole alerts autodelete**  
 Set if the bot should delete the alerts once people stop streaming.  
 This is enabled by default.  
 `!streamrole alerts autodelete [true or false]`  
 >!streamrole alerts autodelete true
+{: .usage }
 
 #### Managing game filter
 
@@ -162,18 +177,22 @@ game being streamed won't be checked before adding the stream role.
 Show the whitelisted games in this server.  
 `!streamrole games show`  
 >!streamrole games show
+{: .usage }
 
 **!streamrole games add**  
 Add a game to the whitelist  
 `!streamrole games add [game]`  
 >!streamrole games add goat simulator
+{: .usage }
 
 **!streamrole games remove**  
 Remove a game from the whitelist.  
 `!streamrole games remove [game]`  
 >!streamrole games remove goat simulator
+{: .usage }
 
 **!streamrole games clear**  
 Clears the whitelist.    
 `!streamrole games clear`  
 >!streamrole games clear
+{: .usage }
