@@ -37,4 +37,5 @@ gem 'rack', '~> 2.2.4'
 gem 'rspec'
 gem "webrick", "~> 1.7"
 gem "jekyll-remote-theme"
-gem "just-the-docs"
+gem "just-the-docs", "0.3.3"
+
