@@ -5,9 +5,18 @@ parent: Moderator Commands
 nav_order: 2
 ---
 
-## Role management
+# Role management
+{: .no_toc }
 
-### Reaction roles
+## Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Reaction roles
 
 **!rolebind**  
 Adds a reaction to a message, and when people click it, they get the role.  
@@ -51,7 +60,7 @@ Clears all role react bindings on the specefied message
 >!clearmessagebinds general 697440993527595008
 {: .usage }
 
-#### Role requirements
+### Role requirements
 **!roleset cost**  
 Makes a role purchasable for a specified cost.  
 
@@ -89,7 +98,7 @@ View the reactions enabled for the server
 Views the current settings for a role  
 
 
-### Stream roles
+## Stream roles
 Want to give the people a special role when they're streaming on twitch?  
 You've come to the right place!  
 
@@ -108,7 +117,7 @@ Both lists can contain roles or users directly.
 >!streamrole setmode blacklist
 {: .usage }
 
-#### Managing the blacklist and whitelist  
+### Managing the blacklist and whitelist  
 
 **!streamrole blacklist show**  
 Show the blacklisted members and roles in this server.  
@@ -146,7 +155,7 @@ Remove a user or role from the whitelist.
 >!streamrole whitelist remove newbies
 {: .usage }
 
-#### Managing stream role alerts
+### Managing stream role alerts
 
 **!streamrole alerts setenabled**  
 Sets if the bot should annouce that someone is live and has gotten the role.  
@@ -167,7 +176,7 @@ This is enabled by default.
 >!streamrole alerts autodelete true
 {: .usage }
 
-#### Managing game filter
+### Managing game filter
 
 Adding games to the whitelist will make the bot only add the stream role
 to members streaming those games. If the game whitelist is empty, the

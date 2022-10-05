@@ -4,9 +4,18 @@ title: Welcome messages
 parent: Moderator Commands
 nav_order: 3
 ---
-## Welcome messages
+# Welcome messages
+{: .no_toc }
 
-### Toggles
+## Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Toggles
 
 To turn stuff on and off  
 **!wcount toggle**  
@@ -18,7 +27,7 @@ Toggle deleting the previous welcome message when a new one is posted.
 `!wcount deletelast`  
 
 
-### Settings
+## Settings
 
 **!wcount joinrole**  
 Set a role which a user must receive before they're welcomed.  
@@ -26,6 +35,7 @@ This means that instead of the welcome message being sent when the user joins th
 `!welcomecount joinrole [role]`
 >!wcount joinrole verified
 
+## Welcome message
 **!wcount message**  
 Set the bot's welcome message.  
 `!welcomecount message [message]`
