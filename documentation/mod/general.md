@@ -54,10 +54,11 @@ You have to tag a user, and optionally you can add how many days of messages you
 **Hack Ban**  
 `!hackban [userID] [days] [reason]`  
 Bans user(s) that are not currently in the server, optionally you can add how many days of messages you want to delete, and a reason to appear in the logs.  
-[userID] a user ID  
-[days] is nuber of days of messages to delete, if they have been in your discord before *Minimum 0 days, maximum 7.*  
-[reason] is for the logs.  
-*If [days] is not specified, it's treated as the first word of the reason.*  
+
+`[userID]` a user ID  
+`[days]` is nuber of days of messages to delete, if they have been in your discord before. *Minimum 0, maximum 7 days.*  
+`[reason]` is for the logs.  
+*If `[days]` is not specified, it's treated as the first word of the reason.*  
 >*Requires specifying the target user's ID, To find this, you may either:*  
 >*1. Copy it from the mod log case (if one was created)*  
 >*2. enable developer mode, right'click the user and select 'Copy ID'.*  
